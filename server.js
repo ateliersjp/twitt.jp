@@ -67,11 +67,7 @@ function serve() {
 
   app.use(morgan("combined", {"stream": accesslog}));
 
-  app.get("/", (req, res) => {
-    res.send(index());
-  });
-
-  app.get("/*", (req, res) => {
+  app.all("*", (req, res) => {
     // pick a random nitter instance and redirect
     const instance = instances[Math.floor(Math.random() * instances.length)];
     if (instance) {
