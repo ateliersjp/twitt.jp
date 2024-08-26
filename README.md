@@ -26,10 +26,14 @@ You can append any valid Twitter/Nitter URL to this page to be redirected. For e
 
 > What infrastructure does twitt.jp run on?
 
-The site runs on a WebArena VPS physically located in Tokyo.
+The site runs on a VPS physically located in Tokyo.
 
-> Can I try to access to it?
+> Can I try to access it?
 
-Yes, please click and enjoy it.
+Yes, please click below to access it.
 
 <https://twitt.jp>
+
+If you access it frequently, please add this bookmarklet to your browser.
+
+```javascript:location.href=location.href.replace(/\/\/[^\/]+/,'//twitt.jp')```
